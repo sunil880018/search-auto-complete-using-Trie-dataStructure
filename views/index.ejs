@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+</head>
+<body>
+    <style>
+        body{
+            margin:auto;
+            padding: 20px;
+        }
+        #name{
+            padding: 10px 10px;
+            margin-top: 10px;
+        }
+        #submit{
+            padding: 10px 20px;
+            margin-top: 10px;
+        }
+    </style>
+    <h2>Design a Search Auto Complete System</h2>
+    <form action="/">
+        <label for="word">word:</label><br>
+        <input type="text" id="name" name="name" placeholder="typing a word..."><br>
+        <input type="submit" value="Search" id="submit">
+    </form>       
+</body>
+<!-- <script src="../utils/searchWord.js"></script> -->
+<script>
+    document.getElementById('name').addEventListener('change', searchWord);
+    function searchWord(){
+        let inputValue = document.getElementById('name').value;
+    // trie.find(word);
+       console.log(inputValue);
+     }
+    
+</script>
+</html>
